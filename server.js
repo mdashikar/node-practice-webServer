@@ -55,7 +55,15 @@ app.get('/about', (req, res) => {
         pageTitle: 'About Page',
         pharaText: 'This is port 3000 !!!'
     });
+});
+
+app.get('/project', (req, res) => {
+    res.render('project.hbs',{
+        pageTitle: 'Project',
+        pharaText: 'Portfolio will be showcased shortlyy'
+    });
 })
+
 
 app.get('/bad', (req, res) => {
     res.send({
